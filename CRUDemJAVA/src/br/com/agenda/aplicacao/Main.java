@@ -16,12 +16,21 @@ public class Main {
 		contato.setNome("Maria Gabriela");
 		contato.setIdade(55);
 		contato.setDataCadastro(new Date());
-		*/
-		contato.setNome("JJoão Gabriel");
+		
+		contato.setNome("João Gabriel");
 		contato.setIdade(78);
+		contato.setDataCadastro(new Date());*/
+		
+		contato.setNome("Maria Gabriela");
+		contato.setIdade(35);
 		contato.setDataCadastro(new Date());
 		
 		contatoDao.save(contato);
+		
+		//Visualização de TODOS os registros do banco de dados 
+		for(Contato c : contatoDao.getContatos()) {
+			System.out.println("Contato: " + c.getNome());
+		}
 		
 	}
 	
