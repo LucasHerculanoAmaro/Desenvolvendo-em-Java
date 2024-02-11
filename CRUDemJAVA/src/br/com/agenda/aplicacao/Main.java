@@ -21,8 +21,8 @@ public class Main {
 		contato.setIdade(78);
 		contato.setDataCadastro(new Date());*/
 		
-		contato.setNome("Maria Gabriela");
-		contato.setIdade(35);
+		contato.setNome("João Carlos");
+		contato.setIdade(18);
 		contato.setDataCadastro(new Date());
 		
 		//contatoDao.save(contato);
@@ -32,9 +32,12 @@ public class Main {
 		c1.setNome("Maria Gabriela Dias Orlando");
 		c1.setIdade(37);
 		c1.setDataCadastro(new Date());
-		c1.setId(1);// É o número que está no banco de dados PK
+		c1.setId(11);// É o número que está no banco de dados PK
 		
-		contatoDao.update(c1);
+		//contatoDao.update(c1);
+		
+		//Deletar contato pelo ID
+		contatoDao.deleteByID(11);
 		
 		//Visualização de TODOS os registros do banco de dados 
 		for(Contato c : contatoDao.getContatos()) {
