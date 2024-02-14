@@ -1,6 +1,6 @@
 export class Funcionario {
     /* */
-    id!: string;
+    id!: number;
     nome!: string;
     sobrenome!: string;
     email!: string;
