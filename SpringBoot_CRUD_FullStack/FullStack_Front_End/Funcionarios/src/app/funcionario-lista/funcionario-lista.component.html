@@ -1,0 +1,17 @@
+<h2> Lista de Funcionário </h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let funcionario of funcionarios" >
+            <td> {{ funcionario.nome }} </td>
+            <td> {{ funcionario.sobrenome }} </td>
+            <td> {{ funcionario.email }} </td>
+        </tr>
+    </tbody>
+</table>
