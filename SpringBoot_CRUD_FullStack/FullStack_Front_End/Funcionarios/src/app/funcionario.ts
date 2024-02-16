@@ -5,6 +5,4 @@ export class Funcionario {
     sobrenome!: string;
     email!: string;
 
-    
-
 }

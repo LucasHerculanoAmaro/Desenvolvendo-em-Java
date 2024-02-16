@@ -9,7 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, RouterOutlet, FuncionarioListaComponent]
+    imports: [CommonModule, RouterOutlet, FuncionarioListaComponent, HttpClientModule]
 })
 export class AppComponent {
   title = 'Funcionarios';

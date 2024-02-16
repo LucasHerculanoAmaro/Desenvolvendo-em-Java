@@ -1,8 +1,9 @@
-import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
-import { Funcionario } from '../funcionario';
-import { FuncionarioService } from '../funcionario.service';
+import { CommonModule } from "@angular/common";
+import { HttpClientModule } from "@angular/common/http";
+import { Component, OnInit } from "@angular/core";
+import { Funcionario } from "../funcionario";
+import { FuncionarioService } from "../funcionario.service";
+
 
 @Component({
   selector: 'app-funcionario-lista',

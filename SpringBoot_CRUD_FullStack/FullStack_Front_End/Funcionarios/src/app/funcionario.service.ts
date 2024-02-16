@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHandler } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Funcionario } from './funcionario';
@@ -8,12 +8,13 @@ import { Funcionario } from './funcionario';
 })
 export class FuncionarioService {
 
-  privatebaseURL= "http://localhost:8080/api/v1/Funcionarios"
+  private baseURL = "http://localhost:8080/api/v1/Funcionarios";
 
   constructor(private httpClient: HttpClient) { }
 
   getFuncionarioLista(): Observable<Funcionario[]> {
-    return this.httpClient.get<Funcionario[]>('${this.baseURL');
+    return this.httpClient.get<Funcionario[]>(this.baseURL);
   }
-
 }
+
+
