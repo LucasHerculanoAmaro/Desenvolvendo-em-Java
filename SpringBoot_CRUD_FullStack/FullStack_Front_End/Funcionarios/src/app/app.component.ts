@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FuncionarioListaComponent } from "./funcionario-lista/funcionario-lista.component";
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
     selector: 'app-root',
