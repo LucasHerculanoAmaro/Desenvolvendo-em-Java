@@ -1,19 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { AppComponent } from './app.component';
 import { FuncionarioListaComponent } from './funcionario-lista/funcionario-lista.component';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { TesteComponent } from './teste/teste.component';
+import { CommonModule } from '@angular/common';
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
-  declarations: [],
+  declarations: [	
+    FuncionarioListaComponent,
+    TesteComponent,
+ ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    AppRoutingModule,
+    HttpClientModule,
+    CommonModule,
   ],
-  providers: [],
+  providers: [AppComponent],
 })
 export class AppModule { }
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));

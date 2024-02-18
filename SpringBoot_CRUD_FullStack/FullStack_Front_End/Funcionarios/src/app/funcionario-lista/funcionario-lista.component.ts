@@ -7,8 +7,6 @@ import { FuncionarioService } from "../funcionario.service";
 
 @Component({
   selector: 'app-funcionario-lista',
-  standalone: true,
-  imports: [CommonModule, HttpClientModule],
   templateUrl: './funcionario-lista.component.html',
   styleUrl: './funcionario-lista.component.css'
 })

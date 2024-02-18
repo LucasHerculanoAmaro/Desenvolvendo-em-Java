@@ -1,4 +1,4 @@
-import { HttpClient, HttpHandler } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Funcionario } from './funcionario';
@@ -16,5 +16,8 @@ export class FuncionarioService {
     return this.httpClient.get<Funcionario[]>(this.baseURL);
   }
 }
-
+/***
+ * 
+ * NullInjectorError: No provider for _HttpClient!
+ */
 
