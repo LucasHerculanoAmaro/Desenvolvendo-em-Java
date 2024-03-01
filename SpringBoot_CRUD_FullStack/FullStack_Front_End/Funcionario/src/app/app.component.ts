@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Funcionario';
+  title = 'Full Stack = Springboot + Java + CRUD + Angular 12 + APP';
 }
