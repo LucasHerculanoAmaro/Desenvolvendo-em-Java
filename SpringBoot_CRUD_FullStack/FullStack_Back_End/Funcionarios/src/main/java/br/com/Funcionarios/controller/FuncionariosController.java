@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -43,6 +44,24 @@ public class FuncionariosController {
 		Funcionario funcionario = funcionarioRepository.findById(id)
 				.orElseThrow(() -> new ResourceNotFoundException("Funcionario não existe com o id: " + id));
 		return ResponseEntity.ok(funcionario);
+	}
+	
+	//Atualizar Funcionário rest api
+	@PutMapping("/Funcionarios/{id}")
+	public ResponseEntity<Funcionario> updateFuncionario(@PathVariable Long id, @RequestBody Funcionario funcionarioDetails){
+		Funcionario funcionario = funcionarioRepository.findById(id)
+				.orElseThrow(() -> new ResourceNotFoundException("Funcionario não existe com o id: " + id));
+		
+		funcionario.setNome(funcionarioDetails.getNome());
+		funcionario.setSobrenome(funcionarioDetails.getSobrenome());
+		funcionario.setEmail(funcionarioDetails.getEmail());	
+		
+		Funcionario updateFuncionario = funcionarioRepository.save(funcionario);
+		
+		return ResponseEntity.ok(updateFuncionario);
+		
+		
+		
 	}
 	
 }
