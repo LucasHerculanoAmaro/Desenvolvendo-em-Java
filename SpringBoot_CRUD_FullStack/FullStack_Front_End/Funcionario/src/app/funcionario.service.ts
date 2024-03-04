@@ -21,4 +21,11 @@ export class FuncionarioService {
     return this.httpClient.post(`${this.baseURL}`, funcionario);
   }
 
+  getFuncionarioById(id: number): Observable<Funcionario> {
+    return this.httpClient.get<Funcionario>(`${this.baseURL}/${id}`);
+  }
+
+  updateFuncionario(id: number, funcionario: Funcionario): Observable<Object>{
+    return this.httpClient.put(`${this.baseURL}/${id}`, funcionario);
+  }
 }
