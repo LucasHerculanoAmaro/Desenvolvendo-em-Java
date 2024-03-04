@@ -6,6 +6,7 @@
             <th>Nome</th>
             <th>Sobrenome</th>
             <th>Email</th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -14,6 +15,9 @@
             <td> {{ funcionario.nome }} </td>
             <td> {{ funcionario.sobrenome }} </td>
             <td> {{ funcionario.email }} </td>
+            <td>
+                <button (click) = "updateFuncionario(funcionario.id)" class="btn btn-info">Atualizar</button>
+            </td>
         </tr>
     </tbody>
 </table>

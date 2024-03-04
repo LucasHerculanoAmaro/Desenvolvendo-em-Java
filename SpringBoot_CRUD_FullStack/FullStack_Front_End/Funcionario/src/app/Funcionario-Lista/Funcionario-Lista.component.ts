@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Funcionario } from '../Funcionario';
 import { FuncionarioService } from '../funcionario.service';
 
@@ -11,7 +12,10 @@ export class FuncionarioListaComponent implements OnInit {
 
   funcionarios: Funcionario[] = [];
 
-  constructor(private funcionarioService: FuncionarioService) {}
+  constructor(
+    private funcionarioService: FuncionarioService,
+    private router: Router
+    ) {}
 
   ngOnInit(): void {
 
@@ -32,5 +36,8 @@ export class FuncionarioListaComponent implements OnInit {
     })
   }
   
+  updateFuncionario(id: number) {
+    this.router.navigate(['atualizar-funcionario', id]);
+  }
 
 }
