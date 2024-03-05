@@ -40,4 +40,11 @@ export class FuncionarioListaComponent implements OnInit {
     this.router.navigate(['atualizar-funcionario', id]);
   }
 
+  deleteFuncionario(id: number){
+    this.funcionarioService.deleteFuncionario(id).subscribe(data =>{
+      console.log(data);
+      this.getFuncionarios();
+    })
+  }
+
 }

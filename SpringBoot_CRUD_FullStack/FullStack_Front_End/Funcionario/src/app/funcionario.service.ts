@@ -28,4 +28,7 @@ export class FuncionarioService {
   updateFuncionario(id: number, funcionario: Funcionario): Observable<Object>{
     return this.httpClient.put(`${this.baseURL}/${id}`, funcionario);
   }
+  deleteFuncionario(id: number): Observable<Object>{
+    return this.httpClient.delete(`${this.baseURL}/${id}`);
+  }
 }
