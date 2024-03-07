@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Funcionario } from '../Funcionario';
 import { FuncionarioService } from '../funcionario.service';
 
@@ -13,8 +14,8 @@ export class DetalhesFuncionarioComponent implements OnInit {
   funcionario!: Funcionario;
 
   constructor(
-    private route ActivatedRoute,
-    private funcionarioService: FuncionarioService
+    private funcionarioService: FuncionarioService,
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
