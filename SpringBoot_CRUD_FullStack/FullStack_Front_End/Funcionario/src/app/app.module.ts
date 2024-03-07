@@ -8,13 +8,15 @@ import { FuncionarioListaComponent } from './Funcionario-Lista/Funcionario-Lista
 import { CriarFuncionarioComponent } from './criar-funcionario/criar-funcionario.component';
 import { FormsModule } from '@angular/forms';
 import { AtualizarFuncionarioComponent } from './atualizar-funcionario/atualizar-funcionario.component';
+import { DetalhesFuncionarioComponent } from './detalhes-funcionario/detalhes-funcionario.component';
 
 @NgModule({
   declarations: [	
     AppComponent,
       FuncionarioListaComponent,
       CriarFuncionarioComponent,
-      AtualizarFuncionarioComponent
+      AtualizarFuncionarioComponent,
+      DetalhesFuncionarioComponent
    ],
   imports: [
     BrowserModule,

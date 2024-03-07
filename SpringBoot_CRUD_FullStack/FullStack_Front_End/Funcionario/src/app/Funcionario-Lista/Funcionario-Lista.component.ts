@@ -47,4 +47,8 @@ export class FuncionarioListaComponent implements OnInit {
     })
   }
 
+  detalhesFuncionario(id: number){
+    this.router.navigate(['detalhes-funcionario', id]);
+  }
+
 }
