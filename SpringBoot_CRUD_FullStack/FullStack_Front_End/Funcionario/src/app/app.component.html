@@ -7,11 +7,16 @@
         <li class="nav-item">
             <a class="nav-link" routerLink="criar-funcionario" routerLinkActive="active">Adicionar Funcionário</a>
         </li>
+
+        <div>
+            <p style="margin: 9px 10px 9px;" class="text-light">{{title}}</p>
+        </div>
+
     </ul>
 
 </nav>
 
-<h1 class="text-center"> {{title}} </h1>
+<h1 class="text-center" style="margin: 30px 0px 30px 0px;"> Controle de Funcionários </h1>
 <div class="container">
     <router-outlet></router-outlet>
 </div>
