@@ -21,13 +21,13 @@ export class FuncionarioListaComponent implements OnInit {
 
     this.getFuncionarios();
 
-    /* Este código foi usado para testar se os métodos e rotas estavam devidamente configurados
+    /* Este código foi usado para testar se os métodos e rotas estavam devidamente configurados*/
 
     this.funcionarios = [
       {  "id": 1,  "nome": "Lucas",  "sobrenome": "Herculano", "email": "lucash.96@hotmail.com"  },
       {  "id": 2,  "nome": "Juliana",  "sobrenome": "Araújo",  "email": "ju.s.araujo@hotmail.com"}
     ];
-    */
+    
   }
 
   private getFuncionarios() {
