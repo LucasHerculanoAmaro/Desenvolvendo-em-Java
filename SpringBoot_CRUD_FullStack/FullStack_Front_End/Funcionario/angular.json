@@ -37,8 +37,8 @@
               "./node_modules/jquery/dist/jquery.js",
               "./node_modules/popper.js/dist/umd/popper.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.js"
-              
             ]
+           
           },
           "configurations": {
             "production": {
@@ -77,7 +77,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Funcionario:build:production"
+              "buildTarget": "Funcionario:build:production"
             },
             "development": {
               "browserTarget": "Funcionario:build:development"
@@ -88,7 +88,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Funcionario:build"
+            "buildTarget": "Funcionario:build:production"
           }
         },
         "test": {

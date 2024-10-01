@@ -20,7 +20,7 @@ public class ContatoDAO {
 		
 		String sql = "INSERT INTO contatos(nome, idade, datacadastro) VALUES(?, ?, ?)";
 		
-		//Preparando conexãoo
+		//Preparando conexão
 		Connection conn = null;
 		ClientPreparedStatement pstm = null;
 		
