@@ -80,7 +80,7 @@
               "buildTarget": "Funcionario:build:production"
             },
             "development": {
-              "browserTarget": "Funcionario:build:development"
+              "buildTarget": "Funcionario:build:development"
             }
           },
           "defaultConfiguration": "development"
